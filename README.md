@@ -23,7 +23,7 @@ Each stage is modular and can be run independently or as part of a pipeline.
 
 ## Important
 
-You can start the classification process immediately using the pretrained models in the output dir. You can change the model for the classification in the trojan_detector_cycle_only.py and then run the evaluate_cycle_detector.py for results.
+You can start the classification process immediately using the pretrained models located in the output directory. If you want to use a different model, update the configuration in trojan_detector_cycle_only.py, then run evaluate_cycle_detector.py to obtain the results.
 
 ---
 
