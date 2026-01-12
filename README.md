@@ -21,6 +21,12 @@ Each stage is modular and can be run independently or as part of a pipeline.
 
 ---
 
+## Important
+
+You can run the evaluation immediately using the pretrained models in the output dir. You can change the model for the classification in the trojan_detector_cycle_only.py and then run the evaluate_cycle_detector.py for results.
+
+---
+
 ## 1. Verilog to Graph Conversion
 
 - **Script:** `local_verilog_to_graphs.py`
