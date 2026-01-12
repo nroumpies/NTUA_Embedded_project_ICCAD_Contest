@@ -1,0 +1,208 @@
+CYCLE FEATURE ANALYSIS REPORT
+======================================================================
+
+STATISTICAL COMPARISON (sorted by effect size)
+----------------------------------------------------------------------
+Feature                               Trojaned      Clean    Cohen_d    p-value
+gate_xnor_std                           0.2937     0.1384     2.0838     0.0001
+rare_gate_density_std                   0.1897     0.0792     1.9589     0.0002
+gate_xnor_mean                          0.1044     0.0270     1.9276     0.0001
+gate_xnor_frac                          0.1044     0.0270     1.9276     0.0001
+gate_xnor_ratio                         0.1044     0.0270     1.9276     0.0001
+high_rare_gate_nodes                    0.3529     0.1123     1.8104     0.0003
+rare_gate_density_mean                  0.1325     0.0343     1.7376     0.0002
+avg_rare_gate_density                   0.1325     0.0343     1.7376     0.0002
+rare_gate_density_max                   0.8267     0.4732     1.5135     0.0014
+max_rare_gate_density                   0.8267     0.4732     1.5135     0.0014
+in_degree_max                           2.7222     2.0833     1.2788     0.0049
+avg_neighbor_fanin_max                  0.2570     0.2083     1.2778     0.0084
+rare_gate_density_frac                  0.0421     0.0043     1.2453     0.0033
+fan_out_norm_mean                       0.7308     0.8886     1.2170     0.0292
+dag_longest_path                        0.0685     0.0327     0.9762     0.0401
+avg_neighbor_fanin_mean                 0.1877     0.1806     0.9408     0.0168
+gate_buf_sum                           17.3333     2.0833     0.8387     0.4304
+gate_xor_std                            0.1262     0.0643     0.8213     0.0209
+in_cycle_original_max                   0.9964     0.9267     0.8170     0.0957
+cone_ratio_std                         42.5708   152.7690     0.7571     0.3198
+neighbor_count_mean                     0.0388     0.0369     0.7473     0.0541
+transitivity                            0.0009     0.0000     0.7449     0.0065
+rare_gate_density_sum                 226.2160    47.6550     0.7378     0.0049
+gate_input_sum                          6.4444    15.7500     0.7359     0.1777
+gate_xnor_sum                         185.9444    42.3333     0.7358     0.0056
+neighbor_count_frac                     0.0018     0.0007     0.7308     0.0286
+gate_xor_sum                           29.3889     8.0833     0.7084     0.0259
+in_degree_mean                          1.7780     1.6348     0.6937     0.3198
+out_degree_mean                         1.7780     1.6348     0.6937     0.3198
+edges_per_node                          1.7780     1.6348     0.6937     0.3198
+graph_feature_7                         0.3556     0.3270     0.6937     0.3198
+graph_feature_8                         0.3556     0.3270     0.6937     0.3198
+in_cycle_original_std                   0.2112     0.1689     0.6510     0.1442
+cone_ratio_mean                        11.7506    28.3246     0.6478     0.4091
+gate_nor_mean                           0.1475     0.2072     0.6463     0.3198
+gate_nor_frac                           0.1475     0.2072     0.6463     0.3198
+gate_nor_ratio                          0.1475     0.2072     0.6463     0.3198
+inverter_density_frac                   0.7652     0.8343     0.6340     0.1824
+gate_dff_max                            1.0000     0.8333     0.6325     0.0866
+fan_in_norm_max                         1.0000     0.8333     0.6325     0.0866
+in_cycle_subgraph_max                   1.0000     0.8333     0.6325     0.0866
+sequential_density_max                  1.0000     0.8333     0.6325     0.0866
+fan_ratio                               1.6958   154.9325     0.6308     0.6876
+inverter_density_std                    0.2582     0.2311     0.6263     0.0720
+fan_out_norm_std                        0.1704     0.2024     0.6076     0.0864
+reconvergent_node_fraction              0.2300     0.1850     0.6056     0.2500
+gate_nor_std                            0.3406     0.3828     0.5876     0.3198
+gate_xor_mean                           0.0293     0.0061     0.5853     0.0209
+gate_xor_frac                           0.0293     0.0061     0.5853     0.0209
+gate_xor_ratio                          0.0293     0.0061     0.5853     0.0209
+avg_path_length                         8.4813     5.5576     0.5401     0.2986
+bottleneck_ratio                        0.0174     0.0309     0.5290     0.1124
+low_ctrl_obs_fraction                   0.1967     0.2975     0.5266     0.2516
+source_node_fraction                    0.0396     0.0818     0.5176     0.5117
+level_std                               0.1590     0.1695     0.5032     0.2117
+sequential_density_frac                 0.0696     0.0407     0.5026     0.2619
+fan_out_variance                        0.0325     0.0431     0.4980     0.0864
+degree_asymmetry                        0.3630     0.3884     0.4973     0.3855
+fan_in_norm_std                         0.4436     0.3768     0.4851     0.1441
+in_cycle_subgraph_std                   0.4436     0.3768     0.4851     0.1441
+num_wccs                                1.1667     2.4167     0.4783     0.5911
+fanin_cone_std                          0.1337     0.0906     0.4582     0.2619
+small_fanout_cone_fraction              0.5100     0.6400     0.4516     0.2189
+fan_in_variance                         0.2048     0.1720     0.4449     0.1441
+largest_wcc_fraction                    0.9967     0.9780     0.4368     0.6415
+gate_nand_max                           1.0000     0.9167     0.4264     0.2474
+gate_xnor_max                           1.0000     0.9167     0.4264     0.2474
+gate_dff_std                            0.3148     0.2729     0.4187     0.5393
+reciprocity                             0.0143     0.0009     0.4175     0.0193
+gate_output_max                         0.7778     0.9167     0.3934     0.3419
+max_fanin_cone_size                     0.5248     0.4161     0.3928     0.3408
+ctrl_obs_product_min                    0.0023     0.0006     0.3923     0.4738
+depth_norm_frac                         0.0029     0.0080     0.3771     0.4849
+min_observability                       0.0130     0.0038     0.3769     0.4738
+gate_input_std                          0.0873     0.1127     0.3751     0.1329
+fan_out_norm_frac                       0.7624     0.8356     0.3702     0.9157
+sequential_density_std                  0.2202     0.1917     0.3631     0.7189
+avg_neighbor_fanout_max                 7.0008     9.5510     0.3557     0.8489
+avg_controllability                     0.3040     0.2742     0.3543     0.9494
+in_cycle_original_frac                  0.4904     0.3779     0.3507     0.1824
+level_width_std                         0.9187     0.8641     0.3429     0.3855
+gate_or_sum                           109.3333    76.7500     0.3398     0.7831
+gate_dff_mean                           0.1211     0.1034     0.3348     0.5393
+gate_dff_frac                           0.1211     0.1034     0.3348     0.5393
+gate_dff_ratio                          0.1211     0.1034     0.3348     0.5393
+in_cycle_original_mean                  0.4721     0.4099     0.3331     0.2619
+gate_output_std                         0.1038     0.1296     0.3329     0.3617
+gate_output_mean                        0.0171     0.0245     0.3275     0.3617
+gate_output_frac                        0.0171     0.0245     0.3275     0.3617
+gate_output_ratio                       0.0171     0.0245     0.3275     0.3617
+gate_buf_std                            0.0705     0.0462     0.3163     0.5996
+avg_neighbor_fanout_frac                0.3313     0.2929     0.3148     0.4849
+inverter_density_mean                   0.6980     0.7245     0.3124     0.5393
+avg_inverter_density                    0.6980     0.7245     0.3124     0.5393
+backward_edge_fraction                  0.3172     0.3309     0.3107     0.1329
+max_level_width                         0.3777     0.3947     0.3091     0.6567
+gate_buf_mean                           0.0130     0.0069     0.3047     0.5996
+gate_buf_frac                           0.0130     0.0069     0.3047     0.5996
+gate_buf_ratio                          0.0130     0.0069     0.3047     0.5996
+fanout_cone_std                         0.2344     0.2770     0.3024     0.3408
+neighbor_count_std                      0.0631     0.0544     0.2775     0.9157
+gate_nand_std                           0.4721     0.4457     0.2672     0.9831
+max_fanout_cone_size                    0.7986     0.7210     0.2593     0.9494
+observability_std                       0.1128     0.1291     0.2588     0.6567
+gate_nand_mean                          0.4065     0.4461     0.2577     0.2997
+gate_nand_frac                          0.4065     0.4461     0.2577     0.2997
+gate_nand_ratio                         0.4065     0.4461     0.2577     0.2997
+depth_norm_sum                         17.9469    15.6390     0.2561     0.6567
+depth_variance                          0.0034     0.0050     0.2549     0.7832
+avg_neighbor_fanin_std                  0.0324     0.0299     0.2424     0.8489
+gate_nor_sum                          211.5000   261.7500     0.2312     0.6414
+largest_scc_fraction                    0.2030     0.2607     0.2287     0.7509
+sink_node_fraction                      0.0743     0.0872     0.2257     0.8489
+neighbor_count_max                      1.7522     2.0592     0.2144     0.8822
+out_degree_std                          5.2743     4.6815     0.2134     0.8489
+sequential_density_mean                 0.1724     0.1565     0.2066     0.7832
+avg_sequential_density                  0.1724     0.1565     0.2066     0.7832
+isolated_cone_nodes                     0.2211     0.2917     0.1984     0.3762
+gate_not_mean                           0.0894     0.1006     0.1931     0.9157
+gate_not_frac                           0.0894     0.1006     0.1931     0.9157
+gate_not_ratio                          0.0894     0.1006     0.1931     0.9157
+gate_not_std                            0.2708     0.2847     0.1894     0.9157
+controllability_std                     0.1384     0.1312     0.1888     0.8822
+fan_out_norm_sum                     1232.4769  1455.2361     0.1866     0.6876
+avg_neighbor_fanout_mean                1.0757     0.9369     0.1800     0.7832
+gate_input_mean                         0.0136     0.0173     0.1732     0.1329
+gate_input_frac                         0.0136     0.0173     0.1732     0.1329
+gate_input_ratio                        0.0136     0.0173     0.1732     0.1329
+out_degree_max                        160.7222   184.5000     0.1622     0.9157
+gate_xor_max                            0.8889     0.8333     0.1612     0.6927
+depth_norm_mean                         0.0258     0.0321     0.1606     0.6567
+in_cycle_original_sum                 861.9168   705.3207     0.1549     0.5967
+nontrivial_scc_node_fraction            0.5367     0.5714     0.1434     0.2195
+fan_in_norm_mean                        0.5367     0.5714     0.1434     0.2195
+fan_in_norm_frac                        0.5367     0.5714     0.1434     0.2195
+in_cycle_subgraph_mean                  0.5367     0.5714     0.1434     0.2195
+in_cycle_subgraph_frac                  0.5367     0.5714     0.1434     0.2195
+cycle_node_fraction                     0.5367     0.5714     0.1434     0.2195
+graph_feature_3                         0.5367     0.5714     0.1434     0.2195
+depth_norm_std                          0.0500     0.0554     0.1411     0.7832
+scc_size_ratio                          0.0781     0.0710     0.1334     0.8159
+gate_dff_sum                          160.6111   179.5833     0.1270     0.8489
+graph_feature_1                        15.0692    13.4171     0.1245     0.7832
+num_edges                            3013.8333  2683.4167     0.1245     0.7832
+num_nontrivial_sccs                   119.7222   134.4167     0.1181     0.9157
+scc_size                              119.7222   134.4167     0.1181     0.9157
+graph_feature_2                        11.9722    13.4417     0.1181     0.9157
+graph_feature_4                        88.8111    78.8250     0.1169     0.9157
+num_sccs                              888.1111   788.2500     0.1169     0.9157
+in_out_degree_correlation              -0.0968    -0.0912     0.1133     0.8489
+avg_neighbor_fanin_sum                311.0208   281.6902     0.1114     0.8489
+small_fanin_cone_fraction               0.3778     0.3400     0.1074     0.4966
+neighbor_count_sum                     63.8056    58.4983     0.0980     0.9157
+graph_feature_5                        16.0139    19.0208     0.0900     0.7347
+avg_neighbor_fanout_std                 1.6875     1.5594     0.0887     0.8159
+gate_output_sum                        21.1667    23.1667     0.0886     0.6865
+gate_or_mean                            0.0581     0.0609     0.0789     0.7348
+gate_or_frac                            0.0581     0.0609     0.0789     0.7348
+gate_or_ratio                           0.0581     0.0609     0.0789     0.7348
+avg_fanin_cone_size                     0.2807     0.2997     0.0771     1.0000
+gate_nand_sum                         776.9444   835.6667     0.0755     0.8159
+avg_fanout_cone_size                    0.2823     0.3010     0.0751     0.8489
+gate_not_sum                          115.7778   123.7500     0.0689     0.7508
+min_controllability                     0.0750     0.0799     0.0579     0.9441
+gate_buf_max                            0.6111     0.5833     0.0567     0.9008
+feedback_arc_fraction                  83.5137    95.5879     0.0565     0.2996
+fan_in_norm_sum                       866.0556   915.0833     0.0543     0.7832
+in_cycle_subgraph_sum                 866.0556   915.0833     0.0543     0.7832
+graph_feature_0                        16.3444    15.6892     0.0464     1.0000
+num_nodes                            1634.4444  1568.9167     0.0464     1.0000
+self_loop_sum                        1634.4444  1568.9167     0.0464     1.0000
+avg_neighbor_fanout_sum              2014.9212  2114.2649     0.0422     0.8822
+num_levels                              0.0127     0.0120     0.0384     0.6876
+inverter_density_sum                 1201.8798  1165.3922     0.0325     0.6876
+sequential_density_sum                236.5602   242.1932     0.0273     0.7508
+in_degree_std                           0.5657     0.5616     0.0257     0.6876
+avg_observability                       0.0837     0.0853     0.0213     0.8159
+gate_or_std                             0.2266     0.2264     0.0037     0.7348
+graph_feature_6                         0.0034     0.0034     0.0001     0.8159
+edge_density                            0.0034     0.0034     0.0001     0.8159
+
+
+BEST DISCRIMINATIVE FEATURES:
+  - rare_gate_density_std
+  - high_rare_gate_nodes
+  - rare_gate_density_mean
+  - rare_gate_density_max
+  - xor_xnor_ratio
+  - rare_logic_ratio
+  - in_degree_max
+  - fan_out_mean
+  - gate_type_entropy
+  - rare_gate_heterogeneity
+  - dag_longest_path
+  - neighborhood_fanin_mean
+  - low_connectivity_nodes
+  - fanin_cone_std
+  - edges_per_node
+  - in_degree_mean
+  - out_degree_mean
+  - neighbor_count_mean
+  - transitivity
