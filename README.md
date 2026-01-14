@@ -1,6 +1,6 @@
 # Hardware Trojan Detection Toolchain
 
-This repository provides a complete toolchain for detecting hardware Trojans in digital circuits using cycle-level and graph-level feature analysis, machine learning, and automated evaluation. The workflow is designed for research and competition settings (e.g., Kaggle), and supports both local and cloud (Kaggle) execution.
+This repository provides a complete toolchain for detecting hardware Trojans in digital circuits using cycle-level and graph-level feature analysis, machine learning, and automated evaluation.
 
 ---
 
