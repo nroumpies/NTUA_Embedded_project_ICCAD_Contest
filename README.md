@@ -18,6 +18,22 @@ Each stage is modular and can be run independently or as part of a pipeline.
 
 ---
 
+## Important 
+
+If you want to use the detector without rerunning the whole toolchain you can do so by downloading the files:
+
+1. **release_all**
+2. **release_hidden**
+3. **output**
+4. **batch_detect_and_evaluate.py**
+5. **trojan_detector_wrapper.py**
+6.  **trojan_detector_cycle_only.py**
+7.  **trojan_detector_cycle_only_original.py**
+
+And then running the file batch_detect_and_evaluate.py
+
+---
+
 ## 1. Verilog to Graph Conversion
 
 - **Script:** `local_verilog_to_graphs.py`
