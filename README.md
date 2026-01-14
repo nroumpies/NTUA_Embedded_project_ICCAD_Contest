@@ -1,6 +1,3 @@
-# NTUA_Embedded_project_ICCAD_Contest
-ICCAD Contest Problem A - Hardware Trojan Detection on Gate-Level Netlist
-
 # Hardware Trojan Detection Toolchain
 
 This repository provides a complete toolchain for detecting hardware Trojans in digital circuits using cycle-level and graph-level feature analysis, machine learning, and automated evaluation. The workflow is designed for research and competition settings (e.g., Kaggle), and supports both local and cloud (Kaggle) execution.
@@ -18,12 +15,6 @@ The toolchain consists of the following main stages:
 5. **Inference & Evaluation**
 
 Each stage is modular and can be run independently or as part of a pipeline.
-
----
-
-## Important
-
-You can start the classification process immediately using the pretrained models located in the output directory. If you want to use a different model, update the configuration in trojan_detector_cycle_only.py, then run evaluate_cycle_detector.py to obtain the results.
 
 ---
 
@@ -94,24 +85,49 @@ You can start the classification process immediately using the pretrained models
 
 ---
 
+
 ## 5. Inference & Evaluation
 
-- **Script:** `trojan_detector_cycle_only.py`
-- **Purpose:** Runs the trained cycle-only model on new Verilog designs to predict the presence of a Trojan.
-- **Input:** Verilog netlist, trained model (default: best cycle model)
-- **Output:** Prediction result (Trojan Detected / Clean)
-- **How to run:**
-  ```bash
-  python trojan_detector_cycle_only.py -netlist <design.v> -output <result.txt>
-  ```
-- **Script:** `evaluate_cycle_detector.py`
-- **Purpose:** Batch-evaluates the detector on a hidden test set, reporting accuracy, confusion matrix, and error cases.
-- **How to run:**
-  ```bash
-  python evaluate_cycle_detector.py
-  ```
+- **Script:** `trojan_detector_cycle_only_original.py`
+  - **Purpose:** The core cycle-only model for trojan detection. Parses Verilog, extracts cycles, computes features, and predicts using a trained ML model.
+  - **Input:** Verilog netlist, trained model (default: best cycle model)
+  - **Output:** Prediction result (Trojan Detected / Clean) and suspicious gate names
+  - **How to run:**
+    ```bash
+    python trojan_detector_cycle_only_original.py -netlist <design.v> -output <result.txt>
+    ```
 
----
+- **Script:** `trojan_detector_cycle_only.py`
+  - **Purpose:** Wrapper for the original detector to ensure output format compatibility for evaluation scripts. Calls the original detector and reformats output as required.
+  - **Input:** Verilog netlist, output file
+  - **How to run:**
+    ```bash
+    python trojan_detector_cycle_only.py -netlist <design.v> -output <result.txt>
+    ```
+
+- **Script:** `trojan_detector_wrapper.py`
+  - **Purpose:** Enhanced wrapper that integrates the original detector and provides improved gate-level output and compatibility with batch pipelines.
+  - **Input:** Verilog netlist, output file, (optional) model path
+  - **How to run:**
+    ```bash
+    python trojan_detector_wrapper.py -netlist <design.v> -output <result.txt>
+    ```
+
+- **Script:** `batch_detect_and_evaluate.py`
+  - **Purpose:** Complete pipeline for batch detection and evaluation. Runs the detector on multiple designs, compares predictions to ground truth, and computes detailed metrics (accuracy, F1, gate-level scores).
+  - **How to run:**
+    ```bash
+    python batch_detect_and_evaluate.py
+    ```
+
+- **Script:** `evaluate_cycle_detector.py`
+  - **Purpose:** Batch-evaluates the detector on a hidden test set, reporting accuracy, confusion matrix, and error cases.
+  - **How to run:**
+    ```bash
+    python evaluate_cycle_detector.py
+    ```
+
+----
 
 ## File/Script Summary
 
@@ -119,10 +135,13 @@ You can start the classification process immediately using the pretrained models
 - `kaggle_cycle_extractor.py` — Cycle subgraph extraction
 - `cycle_feature_analyzer.py` — Feature extraction and analysis
 - `train_trojan_detector.py` — Model training and selection
-- `trojan_detector_cycle_only.py` — Inference (cycle-only model)
+- `trojan_detector_cycle_only_original.py` — Core cycle-only detector (ML logic)
+- `trojan_detector_cycle_only.py` — Output-format wrapper for cycle-only detector
+- `trojan_detector_wrapper.py` — Enhanced wrapper for batch and gate-level output
+- `batch_detect_and_evaluate.py` — Complete batch detection and evaluation pipeline
 - `evaluate_cycle_detector.py` — Batch evaluation on test set
 
----
+----
 
 ## Tips & Best Practices
 
