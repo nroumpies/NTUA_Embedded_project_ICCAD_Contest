@@ -86,6 +86,7 @@ Each stage is modular and can be run independently or as part of a pipeline.
 ---
 
 
+
 ## 5. Inference & Evaluation
 
 - **Script:** `trojan_detector_cycle_only_original.py`
@@ -120,14 +121,8 @@ Each stage is modular and can be run independently or as part of a pipeline.
     python batch_detect_and_evaluate.py
     ```
 
-- **Script:** `evaluate_cycle_detector.py`
-  - **Purpose:** Batch-evaluates the detector on a hidden test set, reporting accuracy, confusion matrix, and error cases.
-  - **How to run:**
-    ```bash
-    python evaluate_cycle_detector.py
-    ```
-
 ----
+
 
 ## File/Script Summary
 
@@ -139,7 +134,6 @@ Each stage is modular and can be run independently or as part of a pipeline.
 - `trojan_detector_cycle_only.py` — Output-format wrapper for cycle-only detector
 - `trojan_detector_wrapper.py` — Enhanced wrapper for batch and gate-level output
 - `batch_detect_and_evaluate.py` — Complete batch detection and evaluation pipeline
-- `evaluate_cycle_detector.py` — Batch evaluation on test set
 
 ----
 
